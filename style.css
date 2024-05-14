@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: rgb(31, 31, 121);
+    --cor02: rgb(21, 21, 77);
+    --fonte01: 'Passion One', sans-serif;
+    --fonte02: "Nunito Sans", sans-serif;
+    --fonte03: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    min-width: 70vh;
+    
+    font-family: var(--fonte03);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02));
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-family: var(--fonte01);
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header > p {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    padding: 15px;
+    background-color: var(--cor02);
+    text-align: right;
+    
+}
+
+nav > a {
+    padding: 5px;
+    background-color: var(--cor02);
+    text-transform: uppercase;
+    font-family: var(--fonte02);
+    border: 1px solid white;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+      
+}
+
+nav > a:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.274);
+
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.5em;
+    padding-left: 5vh;
+    font-family: var(--fonte02);
+    font-size: 3vw;
+    font-weight: bold;
+    
+
+}
+
+section.normal {
+    background-color: white;
+}
+
+section.imagem {
+    background: url(imagens/background01.jpg) center center no-repeat fixed;
+    background-size: cover;
+    box-shadow: inset 6px 5px 13px 0px  rgba(0, 0, 0, 0.418);
+
+}
+
+section > p {
+    padding-bottom: 2em;
+    
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.486);
+}
+
+section.significado {
+    background-color: white;
+    font-size: 3vw;
+
+}
+
+div.video {
+    position: relative;
+    background-color: var(--cor02);
+    height: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 50px;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
